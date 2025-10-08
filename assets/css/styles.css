@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+.roboto-font {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+}
+
+.oooh-baby-regular {
+	font-family: "Oooh Baby", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.shadows-into-light-regular {
+	font-family: "Shadows Into Light", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body{
+	margin:0;
+	/* padding-top:200px */
+}
+
+.top-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 18vh;
+	margin:auto;
+	width: max(80%,500px);
+}
+
+.top-banner>.name {
+	/* border: 2px solid rgb(75 70 74); */
+	font-weight: 600;
+	font-style: normal;
+	font-size: max(7.5vh,4vw,75px);
+}
+
+@media (max-width: 600px) {
+	.top-banner>.name {
+		font-size: 50px;
+	}
+}
+
+@media (max-height: 700px) {
+	.top-banner>.name {
+		font-size: 50px;
+	}
+}
+@media (max-height: 600px) {
+	.top-banner>.name {
+		font-size: 40px;
+	}
+}
+@media (max-height: 550px) {
+	.top-banner>.name {
+		font-size: 30px;
+	}
+}
+
+.top-banner>.email{
+	margin-top: min(1vh,10px);
+	font-weight: 300;
+}
+
+.top-banner>.links{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.logo-link>img{
+	height: 30px;
+	width: auto;
+}
+
+.intro-container {
+  /* border: 2px solid rgb(75 70 74); */
+	/* margin-top: min(0.6vh,5px); */
+	width: max(80%,500px);
+	margin:auto;
+	padding-bottom: 20px;
+	border-bottom: 2px solid rgb(180,180,180);
+}
+
+.publications-container {
+	padding-top: 20px;
+	width: max(80%,500px);
+	margin:auto;
+}
+
+.tab-manager {
+	/* background-color: #f1f1f1; */
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.tab-manager > button {
+	border: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.25s;
+	flex-grow: 1;
+	font-size: 30px;
+	background-color: rgb(240, 240, 240);
+	border: 2px solid #b4b4b4;
+	font-weight: 100;
+}
+
+/* Change background color of buttons on hover */
+.tab-manager button:hover {
+	/* background-color: #ddd; */
+}
+
+/* Create an active/current tablink class */
+.tab-manager > button.active {
+	background-color: #b4b4b4;
+	border: 2px solid #b4b4b4;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.tabcontent.active {
+	display: contents;
+}
