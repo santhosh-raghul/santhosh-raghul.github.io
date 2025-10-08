@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
 
+body {
+	zoom: 110%;
+}
+
 .roboto-font {
 	font-family: "Roboto", sans-serif;
 	font-optical-sizing: auto;
@@ -89,7 +93,7 @@ body{
 	width: max(80%,500px);
 	margin:auto;
 	padding-bottom: 20px;
-	border-bottom: 2px solid rgb(180,180,180);
+	border-bottom: 2px solid #b4b4b4;
 }
 
 .publications-container {
@@ -135,3 +139,18 @@ body{
 .tabcontent.active {
 	display: contents;
 }
+
+/* h2 {
+	margin-top:28px;
+	font-size: xx-large;
+}
+#publications > ul * {
+	font-size: x-large;
+}
+#talks > ul * {
+	font-size: x-large;
+}
+
+.intro-container * {
+	font-size: x-large;
+} */
